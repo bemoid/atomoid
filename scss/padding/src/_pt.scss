@@ -1,0 +1,17 @@
+.pt {
+  @each $size, $declaration in $padding-values {
+    &-#{$size} {
+      padding-top: $declaration;
+    }
+  }
+
+  @each $breakpoint, $width in $breakpoint-sizes {
+    @each $size, $declaration in $padding-values {
+      &-#{$size}\@#{$breakpoint} {
+        @include breakpoint($breakpoint up) {
+          padding-top: $declaration;
+        }
+      }
+    }
+  }
+}

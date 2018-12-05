@@ -1,0 +1,22 @@
+////
+/// @group Padding
+////
+
+/// Collection of space values.
+///
+/// @type {Map}
+/// @prop {Value} 1
+/// @prop {Value} 2
+/// @prop {Value} 3
+/// @prop {Value} 4
+/// @prop {Value} 5
+/// @prop {Value} 6
+$padding-values: (
+  0: 0,
+  1: 1rem,
+  2: 2rem,
+  3: 3rem,
+  4: 4rem,
+  5: 5rem,
+  6: 6rem,
+) !default;

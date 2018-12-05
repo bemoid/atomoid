@@ -1,0 +1,21 @@
+{
+  "name": "@bemoid/atomoid-padding",
+  "description": "Component for providing visual inner space for the element",
+  "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
+  "license": "MIT",
+  "main": "padding.scss",
+  "keywords": [
+    "atomic",
+    "sass",
+    "padding"
+  ],
+  "dependencies": {
+    "@bemoid/mixin-breakpoint": "^0.1.0"
+  },
+  "version": "0.1.0",
+  "repository": "bemoid/atomoid",
+  "bugs": {
+    "url": "https://github.com/bemoid/atomoid/issues"
+  },
+  "homepage": "https://bemoid.com"
+}

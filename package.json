@@ -1,0 +1,23 @@
+{
+  "name": "@bemoid/atomoid",
+  "version": "0.1.0",
+  "description": "A collection of utilities based on Atomic methodology",
+  "homepage": "https://bemoid.com",
+  "main": "scss/atomoid.scss",
+  "scripts": {
+    "lint": "stylelint 'scss/**/*.scss'",
+  },
+  "keywords": [
+    "utilities",
+    "atomic",
+    "css",
+    "sass"
+  ],
+  "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (https://jedrzejchalubek.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@bemoid/stylelint-config": "^0.1.0",
+    "@bemoid/stylelint-config-scss": "^0.1.0",
+    "stylelint": "^9.5.0"
+  }
+}

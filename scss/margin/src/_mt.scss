@@ -1,0 +1,17 @@
+.pt {
+  @each $size, $declaration in $margin-values {
+    &-#{$size} {
+      margin-top: $declaration;
+    }
+  }
+
+  @each $breakpoint, $width in $breakpoint-sizes {
+    @each $size, $declaration in $margin-values {
+      &-#{$size}\@#{$breakpoint} {
+        @include breakpoint($breakpoint up) {
+          margin-top: $declaration;
+        }
+      }
+    }
+  }
+}

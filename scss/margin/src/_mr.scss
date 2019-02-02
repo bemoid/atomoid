@@ -1,0 +1,17 @@
+.pr {
+  @each $size, $declaration in $margin-values {
+    &-#{$size} {
+      margin-right: $declaration;
+    }
+  }
+
+  @each $breakpoint, $width in $breakpoint-sizes {
+    @each $size, $declaration in $margin-values {
+      &-#{$size}\@#{$breakpoint} {
+        @include breakpoint($breakpoint up) {
+          margin-right: $declaration;
+        }
+      }
+    }
+  }
+}
